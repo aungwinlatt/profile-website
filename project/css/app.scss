@@ -1,0 +1,16 @@
+// color
+$primary: #1a129f;
+$secondary: #7e76f9;
+$info: #fe7ebb;
+$success: #88cb88;
+$warning: #ffd037;
+$danger: #fc6681;
+
+// border-radius
+$btn-border-radius: 10rem;
+
+// navbar color
+$navbar-dark-color: white;
+$navbar-dark-hover-color: #e6e6e6;
+// import
+@import "../node_modules/bootstrap/scss/bootstrap";
