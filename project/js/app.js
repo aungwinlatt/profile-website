@@ -28,7 +28,7 @@ function navScroll() {
         setActive(currentSectionId);
       }
     },
-    { offset: "150px" }
+    { offset: "10%" }
   );
 
   currentSection.waypoint(
@@ -39,7 +39,7 @@ function navScroll() {
         setActive(currentSectionId);
       }
     },
-    { offset: "150px" }
+    { offset: "10%" }
   );
 }
 
