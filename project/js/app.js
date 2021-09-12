@@ -1,3 +1,9 @@
+$(window).on("load", function () {
+  $(".loader-container").fadeOut(500, function () {
+    $(this).remove();
+  });
+});
+
 let screenHeight = $(window).height();
 // console.log(screenHeight);
 
@@ -28,7 +34,7 @@ function navScroll() {
         setActive(currentSectionId);
       }
     },
-    { offset: "10%" }
+    { offset: "15%" }
   );
 
   currentSection.waypoint(
@@ -39,7 +45,7 @@ function navScroll() {
         setActive(currentSectionId);
       }
     },
-    { offset: "10%" }
+    { offset: "-85%" }
   );
 }
 
@@ -78,9 +84,4 @@ $(".pricing-slide").slick({
       },
     },
   ],
-});
-$(window).on("load", function () {
-  $(".loader-container").fadeOut(500, function () {
-    $(this).remove();
-  });
 });
