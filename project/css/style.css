@@ -4,9 +4,26 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #1a129f rgb(158, 157, 157);
+  font-size: 16px;
+}
+html::-webkit-scrollbar {
+  width: 0.6vw;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #1a129f;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #1a129f99;
+}
+html::-webkit-scrollbar-track {
+  background-color: rgb(158, 157, 157);
 }
 body {
-  height: 300vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 /* Navbar Start */
 .site-nav {
@@ -264,6 +281,61 @@ body {
 /* Animation End */
 
 /* @media screen Start */
+
+@media screen and (max-width: 1200px) {
+  .services-card-des {
+    overflow: scroll;
+  }
+  .frame {
+    width: 100% !important;
+  }
+  .contact {
+    background-size: auto 70%;
+  }
+  .home {
+    background-size: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-1,
+  .content-2,
+  .content-2-text {
+    width: 100% !important;
+  }
+  .nav-link.current-section {
+    border: 2px solid #1a129f;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+  }
+  .services-card-des {
+    overflow: scroll;
+  }
+  .frame {
+    width: 100% !important;
+  }
+  .contact {
+    background-size: auto 70% !important;
+  }
+  .site-nav {
+    background-color: #ffffffee;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #00000015;
+  }
+  .site-nav .menu-icon {
+    color: #1a129f !important;
+  }
+  .site-nav .nav-link {
+    color: #1a129f !important;
+    padding: 15px 20px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #00000015;
+    border-radius: 10em;
+  }
+  .navbar-nav {
+    padding-top: 20px;
+  }
+}
 @media screen and (max-width: 576px) {
   .content-1,
   .content-2,
@@ -312,58 +384,6 @@ body {
   }
   .navbar-nav {
     padding-top: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .content-1,
-  .content-2,
-  .content-2-text {
-    width: 100% !important;
-  }
-  .nav-link.current-section {
-    border: 2px solid #1a129f;
-    border-radius: 10em;
-    padding: 0.5rem 1.3rem !important;
-  }
-  .services-card-des {
-    overflow: scroll;
-  }
-  .frame {
-    width: 100% !important;
-  }
-  .contact {
-    background-size: auto 70% !important;
-  }
-  .site-nav {
-    background-color: #ffffffee;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 5px #00000020;
-  }
-  .site-nav .menu-icon {
-    color: #1a129f !important;
-  }
-  .site-nav .nav-link {
-    color: #1a129f !important;
-    padding: 15px 20px;
-    background: #ffffff;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px #00000015;
-    border-radius: 10em;
-  }
-  .navbar-nav {
-    padding-top: 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .services-card-des {
-    overflow: scroll;
-  }
-  .frame {
-    width: 100% !important;
-  }
-  .contact {
-    background-size: auto 70%;
   }
 }
 /* @media screen End */
